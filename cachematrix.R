@@ -1,8 +1,10 @@
-## Put comments here that give an overall description of what your
-## functions do
+# See README.md for instructions on running the code and output from it
+# The assignment states that running the code is not part of the grading 
+# but I have the instructions anyway.
 
-## Write a short comment describing this function
-
+# makeCacheMatrix is a function that returns a list of functions
+# Its puspose is to store a martix and a cached value of the inverse of the 
+# matrix. 
 makeCacheMatrix <- function(x = matrix()) {
   inv <- NULL
   set <- function(y) {
@@ -18,8 +20,8 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
-
+# The following function calculates the inverse of a "special" matrix created with 
+# makeCacheMatrix
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
   inv <- x$getsolve()
